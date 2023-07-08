@@ -1,12 +1,10 @@
 databases:
   - name: postgres
     ipAllowList: []
-    databaseName: csie_casino
-    user: csie_casino
 
 services:
   - type: web
-    name: csie_casino
+    name: rails
     env: ruby
     buildCommand: "./render-build.sh"
     startCommand: "bundle exec rails s"
